@@ -21,7 +21,7 @@ app.listen(port, () => {
 }));
  */
 
-const whitelist = ["https://https://cbc43b-2.myshopify.com/"];
+const whitelist = ["https://cbc43b-2.myshopify.com/"];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
