@@ -1,6 +1,8 @@
-// No necesitas requerir 'path' para definir rutas en Express
+const express = require('express');
+const router = express.Router();
 
-app.get('/inserta', (req, res) => { // Usa una cadena de texto para la ruta
+// Aquí defines la ruta 'inserta' que envía el contenido HTML y JavaScript
+router.get('/inserta', (req, res) => {
   const htmlContent = `
     <div id="miContenido">
       <button id="miBoton">Haz clic aquí</button>
@@ -14,3 +16,5 @@ app.get('/inserta', (req, res) => { // Usa una cadena de texto para la ruta
   `;
   res.send(htmlContent);
 });
+
+module.exports = router;

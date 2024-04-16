@@ -25,7 +25,18 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// Ruta principal
+// Aquí importas las rutas desde index.js
+const apiRoutes = require('./api/index');
+
+// Usas las rutas importadas en tu aplicación
+app.use('/api', apiRoutes);
+
+// Iniciar servidor
+app.listen(port, () => {
+    console.log(`API escuchando en puerto: ${port}`);
+  });
+
+/* // Ruta principal
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + "/api/index.js"));
 });
@@ -34,3 +45,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`API escuchando en puerto: ${port}`);
 });
+ */
