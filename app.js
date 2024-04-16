@@ -11,7 +11,7 @@ const path = require('path');
 
 app.get('/', (req, res) => {
     //res.send("Hola desde la API");
-    res.sendFile(path.join(__dirname + "(/api/index.html"));
+    res.sendFile(path.join(__dirname + "/api/index.html"));
 });
 
 app.listen(port, () => {
