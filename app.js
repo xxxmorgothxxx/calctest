@@ -27,7 +27,7 @@ app.use(cors(corsOptions));
 
 // Ruta principal
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + "/api/index.html"));
+  res.sendFile(path.join(__dirname + "/api/index.js"));
 });
 
 // Iniciar servidor
