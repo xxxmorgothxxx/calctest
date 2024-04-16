@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const path = require('path');
 
@@ -18,7 +18,7 @@ app.listen(port, () => {
   console.log(`API escuchando en puerto: ${port}`);
 });
 
-const cors = require('cors');
+/* const cors = require('cors');
 app.use(cors({
   origin: 'https://https://cbc43b-2.myshopify.com/'
-}));
+})); */
