@@ -18,7 +18,7 @@ app.listen(port, () => {
   console.log(`API escuchando en puerto: ${port}`);
 });
 
-/* const cors = require('cors');
+const cors = require('cors');
 app.use(cors({
   origin: 'https://https://cbc43b-2.myshopify.com/'
-})); */ 
+})); 
