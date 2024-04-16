@@ -4,7 +4,7 @@ const router = express.Router();
 // Aquí defines la ruta 'inserta' que envía el contenido HTML y JavaScript
 router.get('/inserta', (req, res) => {
   const htmlContent = `
-    <div id="miContenido class="fran">
+    <div id="miContenido" class="fran">
       <button id="miBoton">Haz clic aquí</button>
       <p>Este es un texto de ejemplo que será insertado en la página.</p>
     </div>
