@@ -15,13 +15,13 @@ app.listen(port, () => {
   console.log(`API escuchando en puerto: ${port}`);
 });
 
-/* app.use(cors({
-  origin: "https://https://cbc43b-2.myshopify.com/",
+app.use(cors({
+  origin: "https://cbc43b-2.myshopify.com",
   credentials: true
 }));
- */
 
-const whitelist = ["https://cbc43b-2.myshopify.com/"];
+
+/* const whitelist = ["https://cbc43b-2.myshopify.com/"];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || whitelist.indexOf(origin) !== -1) {
@@ -33,4 +33,4 @@ const corsOptions = {
   credentials: true,
 };
 
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); */
