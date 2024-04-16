@@ -1,4 +1,4 @@
-app.get('/insertar-contenido', (req, res) => {
+app.get('/', (req, res) => {
     const htmlContent = `
       <div id="miContenido">
         <button id="miBoton">Haz clic aquí</button>
