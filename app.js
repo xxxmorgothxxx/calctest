@@ -26,7 +26,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Aquí importas las rutas desde index.js
-const apiRoutes = require('./api/index');
+const apiRoutes = require('./api');
 
 // Usas las rutas importadas en tu aplicación
 app.use('/api', apiRoutes);
