@@ -24,8 +24,7 @@ app.use(cors({
 })); */
 
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', "https://cbc43b-2.myshopify.com"); // Permite el dominio de Shopify
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
+import express from "express"
+import cors from "cors"
+
+app.use(cors())
