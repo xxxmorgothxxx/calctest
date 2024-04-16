@@ -19,14 +19,6 @@ app.listen(port, () => {
 });
 
 const cors = require('cors');
-/* app.use(cors({
-  origin: 'https://https://cbc43b-2.myshopify.com/'
-}));  */
-
-const corsOptions = {
-  origin: ["https://https://cbc43b-2.myshopify.com/"],
-  preflightContinue:false,
-  credentials: true
-}
-
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: "https://https://cbc43b-2.myshopify.com/"
+}));
