@@ -19,6 +19,8 @@ app.listen(port, () => {
 });
 
 const cors = require('cors');
-app.use(cors({
+/* app.use(cors({
   origin: 'https://https://cbc43b-2.myshopify.com/'
-})); 
+}));  */
+
+app.use(cors()); // <---- use cors middleware
